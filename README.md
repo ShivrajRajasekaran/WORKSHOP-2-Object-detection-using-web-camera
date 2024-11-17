@@ -1,19 +1,20 @@
-## Real_time_object_detection
-Aim: To detect real time object detection using python and yolov4.
-Reg.No: 212223110051
-Name: SHIVRAJ
-## Procedure:
-Step1: Install Required Libraries
-Step2: Download YOLOv4 Weights and Configuration Files
-Step3: Load YOLOv4 in Python
-Step4: Set Up the Video Stream
-Step5: Adjust Confidence and Non-Max Suppression Thresholds
-Step6: Running the Script
+# Object-Detection
+## Name: SHIVRAJ R 
+## Reg no: 212223110051
+## AIM:
+To perform real-time object detection using a trained YOLO v4 model through the laptop camera. The YOLO v4 model will be utilized to detect objects in real-time, displaying bounding boxes and class labels around detected objects.
+
+## Algorithm:
+### Load Pre-trained YOLO v4 Model:
+1. Load YOLO v4 weights and configuration files.
+2. Retrieve the output layer names required for predictions.
+3. Load COCO dataset class names for object classification.
+4. Access Laptop Camera:
+5. Initialize a video capture object using OpenCV to stream from the laptop camera. Real-Time Object Detection Loop:
+6. Capture each frame from the camera.
+7. 
 ## Program:
 ```
-import cv2
-import numpy as np
-
 # Load YOLOv4 network
 net = cv2.dnn.readNet("yolov4.weights", "yolov4.cfg")
 
@@ -87,10 +88,9 @@ while True:
 # Release video capture and close windows
 cap.release()
 cv2.destroyAllWindows()
-
 ```
-## Output:
-![370147053-bc6d5a9f-b89c-48dd-b867-03509951e4fb](https://github.com/user-attachments/assets/27dc4971-a269-45b9-9a0f-10220b8ffdcf)
+# Output:
+![image](https://github.com/user-attachments/assets/5c4d740a-d178-42e1-bb47-281adfc3b674)
 
-## Result:
-The real-time object detection system using Python and YOLOv4 successfully detected and classified objects from live video feed with accurate bounding boxes and labels in real time.
+# Result:
+Real-time object detection with labeled bounding boxes around detected objects in the camera feed.
